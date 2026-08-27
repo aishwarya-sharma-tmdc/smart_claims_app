@@ -1,0 +1,47 @@
+/* Design tokens — shared design language with the Customer Health app.
+   Roles map to Tailwind utilities (bg-bg-primary, text-fg-primary, …) and
+   swap automatically when [data-theme="dark"] is set on <html>. */
+
+:root {
+  /* Raw palette */
+  --color-palette-white: #ffffff;
+  --color-palette-slate: #242422;
+  --color-palette-primary-teal: #54ded1;
+  --color-palette-dark-teal: #009293;
+  --color-palette-accent-blue: #5b8cff;
+  --color-palette-ember: #ff5537;
+  --color-palette-amber: #d97706;
+
+  /* Roles — light */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f4f4f5;
+  --color-bg-elevated: #ffffff;
+  --color-bg-card: #ffffff;
+  --color-fg-primary: #242422;
+  --color-fg-secondary: #35505b;
+  --color-action-primary: #009293;
+  --color-brand-accent: #54ded1;
+  --color-state-success: #0f9d8c;
+  --color-state-danger: #ff5537;
+  --color-state-warning: #d97706;
+  --color-divider: #e5dfd7;
+
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "IBM Plex Serif", ui-serif, Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+[data-theme="dark"] {
+  --color-bg-primary: #141414;
+  --color-bg-secondary: #1c1c1c;
+  --color-bg-elevated: #242424;
+  --color-bg-card: #1e1e1e;
+  --color-fg-primary: #f0f0f0;
+  --color-fg-secondary: #a6b0b5;
+  --color-action-primary: #5b8cff;
+  --color-brand-accent: #5b8cff;
+  --color-state-success: #2dd4bf;
+  --color-state-danger: #ff6b52;
+  --color-state-warning: #f59e0b;
+  --color-divider: #3c424c;
+}
